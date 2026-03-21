@@ -32,14 +32,14 @@ public class Scripture
 
     public string GetDisplayText()
     {
-        string text = _reference.GetDisplayText() + "\n\n";
+        string result = "\n" + _reference.GetDisplayText() + ": ";
 
         foreach (Word word in _words)
         {
-            text += word.GetDisplayText() + " ";
+            result += word.GetDisplayText() + " ";
         }
 
-        return text.Trim();
+        return result.Trim();
     }
 
     public bool IsCompletelyHidden()

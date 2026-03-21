@@ -15,7 +15,7 @@ class Program
         while (true)
         {
             Console.Clear();
-            Console.WriteLine(scripture.GetDisplayText());
+            Console.WriteLine("\n"+scripture.GetDisplayText());
 
             if (scripture.IsCompletelyHidden())
                 break;
