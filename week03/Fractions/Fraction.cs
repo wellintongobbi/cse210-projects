@@ -3,27 +3,24 @@ using System.Collections.Generic;
 
 public class Fraction
 {
-    private int _top;
-    private int _bottom;
+    private int _top = 1;
+    private int _bottom = 1;
 
     public Fraction()
     {
-        _top = 1;
-        _bottom = 1;
         GetFractionString();
         GetDecimalValue();
     }
     public Fraction(int top)
     {
-        _top = top;
-        _bottom = 1;
+        SetTop(top);
         GetFractionString();
         GetDecimalValue();
     }
     public Fraction(int top, int bottom)
     {
-        _top = top;
-        _bottom = bottom;
+        SetTop(top);
+        SetBottom(bottom);
         GetFractionString();
         GetDecimalValue();
     }
@@ -53,7 +50,7 @@ public class Fraction
     }
 
 
-    /**/
+    /*Mathematics*/
     
     public string GetFractionString()
     {
